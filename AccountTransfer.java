@@ -44,6 +44,9 @@ public class AccountTransfer {
 
 		AccountTransfer u1=new AccountTransfer("u1", "Aung Aung",10000);
 		AccountTransfer u2=new AccountTransfer("u2", "Maung Maung", 1000000);
+		System.out.println("Aung Aung's initial balance is "+u1.balance);
+		System.out.println("Maung Maung's initial balance is "+u2.balance);
+		System.out.println("Transfer Balance from Maung Maung to Aung Aung is 100000.\n");
 		
 		u2.transferTo(u1,100000);
 		System.out.println("Aung Aung's balance is "+u1.balance);
